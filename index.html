@@ -1,138 +1,126 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KA Triangle Ventures LLC</title>
   <style>
-    body {
+    body, html {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f7fa;
-      color: #222;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f3f6f9;
+      color: #333;
     }
 
-    header {
-      background-image: url('header-background.jpg');
-      background-size: cover;
-      background-position: center;
+    .hero {
+      background: url('https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       color: white;
-      padding: 100px 20px;
       text-align: center;
+      text-shadow: 2px 2px 5px #000;
     }
 
-    header h1 {
+    .hero h1 {
       font-size: 3em;
-      margin-bottom: 10px;
+      margin: 0;
     }
 
-    header p {
-      font-size: 1.3em;
-      color: #eee;
+    .hero p {
+      font-size: 1.2em;
     }
 
     nav {
-      background-color: #15232e;
-      padding: 10px 20px;
-      text-align: center;
+      background-color: #0b1f2a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
     }
 
     section {
-      padding: 60px 20px;
+      padding: 4rem 2rem;
       text-align: center;
     }
 
-    .dark {
-      background-color: #e9eef2;
+    section:nth-child(even) {
+      background-color: #eaeef3;
     }
 
     h2 {
-      color: #183a5a;
-      margin-bottom: 15px;
-    }
-
-    .footer {
-      background-color: #15232e;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    .footer a {
-      color: #7ecfff;
-      text-decoration: none;
+      color: #0b1f2a;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>KA Triangle Ventures LLC</h1>
-  <p>Strategic Solutions for Growth and Innovation</p>
-</header>
+  <div class="hero">
+    <h1>KA Triangle Ventures LLC</h1>
+    <p>Strategic Solutions for Growth and Innovation</p>
+  </div>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#team">Team</a>
-  <a href="#projects">Projects</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#location">Location</a>
-  <a href="#contact">Contact</a>
-  <a href="#support">Support</a>
-</nav>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact</a>
+    <a href="#support">Support</a>
+  </nav>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>KA Triangle Ventures LLC is a North Carolina-based firm focused on innovative business development and strategic growth solutions.</p>
-</section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a North Carolina-based firm focused on innovative business development and strategic growth solutions.</p>
+  </section>
 
-<section id="services" class="dark">
-  <h2>Our Services</h2>
-  <p>We offer consulting, investment planning, and project management across various industries.</p>
-</section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We offer strategic consulting, project management, and market development services tailored for your business.</p>
+  </section>
 
-<section id="team">
-  <h2>Our Team</h2>
-  <p>Led by experienced professionals Akhil Bhatia and Jyotsna Wadhawan, we bring knowledge and agility to every venture.</p>
-</section>
+  <section id="team">
+    <h2>Our Team</h2>
+    <p>Meet the brilliant minds behind our success — passionate, driven, and client-focused.</p>
+  </section>
 
-<section id="projects" class="dark">
-  <h2>Highlighted Projects</h2>
-  <p>From tech startups to retail transformations, we’ve delivered scalable, results-driven initiatives.</p>
-</section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>From startups to enterprise, explore some of our latest ventures and milestones.</p>
+  </section>
 
-<section id="gallery">
-  <h2>Gallery</h2>
-  <p>[Add images of your projects or team here]</p>
-</section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Take a look at our workspace, events, and team moments.</p>
+  </section>
 
-<section id="location" class="dark">
-  <h2>Our Location</h2>
-  <p>Apex, North Carolina, United States</p>
-</section>
+  <section id="location">
+    <h2>Location</h2>
+    <p>Apex, North Carolina, USA</p>
+  </section>
 
-<section id="contact">
-  <h2>Contact Information</h2>
-  <p>Email: <a href="mailto:support@katrianventure.shop">support@katrianventure.shop</a><br>
-     Phone: +1 234-363-6219</p>
-</section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email us at <a href="mailto:support@katrianventure.shop">support@katrianventure.shop</a><br>
+    Call us at +1 234 363 6219</p>
+  </section>
 
-<section id="support" class="dark">
-  <h2>Support & Inquiries</h2>
-  <p>Reach out to us for collaboration opportunities, service quotes, or general questions. We're here to help!</p>
-</section>
-
-<div class="footer">
-  &copy; 2025 KA Triangle Ventures LLC — All Rights Reserved
-</div>
+  <section id="support">
+    <h2>Support</h2>
+    <p>For customer or technical support, reach out to our dedicated helpdesk anytime.</p>
+  </section>
 
 </body>
 </html>
